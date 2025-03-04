@@ -28,11 +28,10 @@ func Pressure(row, col int) float64 {
 }
 
 func main() {
-	// rows := 10
-	// for r := 0; r < rows; r++ {
-	// 	for c := 0; c <= r; c++ {
-	// 		fmt.Printf("pressure(%d, %d) = %.6f\n", r, c, Pressure(r, c))
-	// 	}
-	// }
-	fmt.Printf("pressure(%d, %d) = %.6f\n", 322, 156, Pressure(322, 156))
+	rows := 10
+	for r := 0; r < rows; r++ {
+		for c := 0; c <= r; c++ {
+			fmt.Printf("pressure(%d, %d) = %.6f\n", r, c, Pressure(r, c))
+		}
+	}
 }
